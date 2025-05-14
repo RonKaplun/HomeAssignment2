@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets\style\home.css">
+  <link rel="stylesheet" href="assets\style\global.css">
+  <title>My Portfolio</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
+<header>
+     <nav>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project-calculator.html">Project Calculator</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+        <button onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
+  </header> 
+   <main>
+    <section>
+  <div class="hero-flex-container">
+     <div class="hero-text">
+      <h1> About </h1>
+      <p>
+        A highly motivated and self-driven Business Administration student with a specialization in Information
+Systems. Adept at problem-solving, learning new technologies, and delivering results in fast-paced
+environments. Seeking to leverage my skills in technology development, customer success, and project
+
+management.
+      </p>
+      <h2>Education</h2>
+      <p>
+        2023 - Present - Ruppin Academic Center - Bachelor's degree in Business Administration,
+specializing in Information Systems (2nd year).
+Information Systems Design and Analysis, Server-side and Client-side Development (HTML, C#,
+ERD, SQL, Excel, AI tools), Business Administration and BI. GPA: 90.
+2014 - 2017 - Galili High School, Kfar Saba
+Completed 5 units in: Mathematics, English, Computer Science, Psychology-Sociology.
+12 years - Full high school diploma.
+Volleyball major - Athlete.
+      </p>
+    </div>
+    </section>
+   </main>
   <footer></footer>
 </body>
 </html>
