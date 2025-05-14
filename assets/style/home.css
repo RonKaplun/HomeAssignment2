@@ -12,13 +12,13 @@ body {
     --footer-bg: #1e1e1e;
   }
   .hero-text  {
-    align-items: center;
+    align-content: center;
   }
 .profile_img img
 {
 width: 20%;
 height: auto;
-align-items: center;
+align-content: center;
 }
 .container {
   display: flex;
