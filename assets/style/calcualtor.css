@@ -29,31 +29,3 @@ main {
   text-align: center;
 }
  
-.Hero-Section {
-  background-color:var(--bg-color);
-  padding: 120px 20px 50px 20px;
-}
-.hero-flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap; /* מאפשר שבירה לשורות במובייל */
-  text-align: center;
-}
-
-/* עיצוב הטקסט */
-.hero-text {
-  max-width: 500px;
-}
-
-.hero-text h1 {
-  margin-bottom: 10px;
-  font-size: 28px;
-}
-
-.hero-text p {
-  margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 1.5;
-}
