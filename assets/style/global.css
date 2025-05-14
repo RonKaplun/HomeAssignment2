@@ -54,3 +54,6 @@ footer{
     display: flex;
     align-items: center;
   }
+  .footer text{
+    align-items: center;
+  }
