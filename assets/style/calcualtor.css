@@ -1,32 +1,48 @@
 :root {
-    --bg-color: white;
-    --text-color: #111;
-    --primary-color: #0d6efd;
-    --footer-bg: #f1f1f1;
+    --bg-color: whitesmoke;
+    --text-color: black;
+    --footer-bg: lightgrey;
   }
-  
-  body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #f1f1f1;
-    --footer-bg: #1e1e1e;
+
+ body.dark-mode {
+    --bg-color: black;
+    --text-color: whitesmoke;
+    --footer-bg: darkgrey;
   }
-  
   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+ 
+.Hero-Section {
+  background-color:var(--bg-color);
+  padding: 120px 20px 50px 20px;
+}
+.hero-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* מאפשר שבירה לשורות במובייל */
+  text-align: center;
+}
 
+/* עיצוב הטקסט */
+.hero-text {
+  max-width: 500px;
+}
 
-  
-  .Hero-Section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    gap: 40px;
-  }
+.hero-text h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
 
-  
+.hero-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
