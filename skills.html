@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Experience And Skills</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets\style\home.css">
+  <link rel="stylesheet" href="assets\style\global.css">
+  <title>My Portfolio</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+<header>
+     <nav>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project-calculator.html">Project Calculator</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+        <button onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
+  </header> 
+   <main>
+    <section class="Hero-Section">
+  <div class="hero-flex-container">
+     <div class="hero-text">
+      <h1> Skills</h1>
+     
+       <h2>Technical Skills</h2>
+      <p>
+       HTML, CSS, Java Script, C#, ERD, SQL
+</p>
+      <h2>Systems & Tools
+      </h2>
+<p>
+Microsoft 365, office, Excel, SharePoint, CRM Systems, Photoshop, AI tools.
+      </p>
+       <h2>Languages</h2>
+      <p>
+       Hebrew (Native), English (Very Good), Russian (Very Good).
+</p>
+      </div>
+    </section>
+   </main>
+   <footer>
+     <p>© 2025 Ron Kaplun. All rights reserved.</p>
+  </footer>
 </body>
+
+ <script defer src="services\global.js"></script>
+ 
 </html>
