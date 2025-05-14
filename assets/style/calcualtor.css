@@ -38,11 +38,10 @@ main {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* מאפשר שבירה לשורות במובייל */
+  flex-wrap: wrap; 
   text-align: center;
 }
 
-/* עיצוב הטקסט */
 .hero-text {
   max-width: 500px;
 }

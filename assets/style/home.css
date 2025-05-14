@@ -28,11 +28,10 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* מאפשר שבירה לשורות במובייל */
+  flex-wrap: wrap;
   text-align: center;
 }
 
-/* עיצוב הטקסט */
 .hero-text {
   max-width: 500px;
 }
@@ -58,14 +57,12 @@
   border-radius: 5px;
 }
 
-/* עיצוב התמונה */
 .profile_img img {
   width: 200px;
   height: auto;
   border-radius: 50%;
 }
 
-/* רספונסיביות למסכים צרים */
 @media (max-width: 768px) {
   .hero-flex-container {
     flex-direction: column;
@@ -93,7 +90,6 @@
   box-sizing: border-box;
 }
 
-/* יצירת קשר */
 .contact h2 {
   margin-top: 0;
   margin-bottom: 15px;
@@ -123,7 +119,6 @@
   margin-left: 10px;
 }
 
-/* פרויקט */
 .project h2 {
   margin-top: 0;
 }
@@ -150,7 +145,6 @@
   border-radius: 5px;
 }
 
-/* מובייל */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
