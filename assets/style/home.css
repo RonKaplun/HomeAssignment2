@@ -137,7 +137,7 @@
   margin-top: 10px;
   text-decoration: none;
   color: var(--text-color);
-  background-color: var(--bg-color)5;
+  background-color: var(--footer-bg);
   padding: 10px 15px;
   border-radius: 5px;
 }
