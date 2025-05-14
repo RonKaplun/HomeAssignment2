@@ -1,0 +1,95 @@
+body {
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+ body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --footer-bg: #1e1e1e;
+  }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+/* יצירת קשר */
+.contact h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin-bottom: 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* פרויקט */
+.project h2 {
+  margin-top: 0;
+}
+
+.project p {
+  margin: 10px 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #0077b5;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* מובייל */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
