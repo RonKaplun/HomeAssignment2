@@ -1,4 +1,4 @@
 main{
     max-width: 120px;
-    height: 100%;
+    flex: 1;
 }
