@@ -11,13 +11,14 @@ body {
     --text-color: #f1f1f1;
     --footer-bg: #1e1e1e;
   }
-  .Hero-Section {
+  .hero-text  {
     align-items: center;
   }
 .profile_img img
 {
 width: 20%;
 height: auto;
+align-items: center;
 }
 .container {
   display: flex;
