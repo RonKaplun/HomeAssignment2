@@ -12,7 +12,9 @@
     max-height: 100px;
     
  }
-
+.button{
+  margin-left: 10%;
+ }
  nav {
     width: 100%;
     display:flex;
