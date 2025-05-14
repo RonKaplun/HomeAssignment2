@@ -1,16 +1,24 @@
-body {
-  direction: rtl;
-  font-family: Arial, sans-serif;
-  background-color: whitesmoke;
-  margin: 0;
-  padding: 0;
-}
+
+:root {
+    --bg-color: whitesmoke;
+    --text-color: black;
+    --primary-color: lightgrey;
+    --footer-bg: lightgrey;
+  }
 
  body.dark-mode {
     --bg-color: black;
     --text-color: whitesmoke;
     --footer-bg: black;
   }
+  body {
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
  .Hero-Section {
   background-color:whitesmoke;
   padding: 120px 20px 50px 20px;
