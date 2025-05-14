@@ -12,6 +12,9 @@
     max-height: 100px;
     
  }
+ main{
+    flex: 1;
+ }
 .button{
 margin: 30px;
  }
