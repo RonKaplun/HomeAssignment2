@@ -9,7 +9,7 @@
  body.dark-mode {
     --bg-color: black;
     --text-color: whitesmoke;
-    --footer-bg: black;
+    --footer-bg: darkgrey;
   }
   body {
   direction: rtl;
