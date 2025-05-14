@@ -20,7 +20,7 @@
   padding: 0;
 }
  .Hero-Section {
-  background-color:whitesmoke;
+  background-color:var(--bg-color);
   padding: 120px 20px 50px 20px;
 }
 
@@ -53,8 +53,8 @@
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  color: white;
-  background-color: #0077b5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -87,7 +87,7 @@
 .column {
   flex: 1;
   min-width: 300px;
-  background-color: #ffffff;
+  background-color:var(--bg-color);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -112,7 +112,7 @@
 
 .contact a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -137,8 +137,8 @@
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  color: white;
-  background-color: #0077b5;
+  color: var(--text-color);
+  background-color: var(--bg-color)5;
   padding: 10px 15px;
   border-radius: 5px;
 }
