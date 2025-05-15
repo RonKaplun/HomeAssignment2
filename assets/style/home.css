@@ -1,25 +1,26 @@
-
 :root {
-    --bg-color: whitesmoke;
-    --text-color: black;
-    --footer-bg: lightgrey;
-  }
+  --bg-color: whitesmoke;
+  --text-color: black;
+  --footer-bg: lightgrey;
+}
 
- body.dark-mode {
-    --bg-color: black;
-    --text-color: whitesmoke;
-    --footer-bg: darkgrey;
-  }
-  body {
+body.dark-mode {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --footer-bg: darkgrey;
+}
+
+body {
   direction: ltr;
   font-family: Arial, sans-serif;
-  background-color:var(--bg-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
 }
- .Hero-Section {
-  background-color:var(--bg-color);
+
+.Hero-Section {
+  background-color: var(--bg-color);
   padding: 120px 20px 50px 20px;
 }
 
@@ -63,15 +64,6 @@
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  .hero-flex-container {
-    flex-direction: column;
-  }
-
-  .profile_img img {
-    width: 150px;
-  }
-}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +75,7 @@
 .column {
   flex: 1;
   min-width: 300px;
-  background-color:var(--bg-color);
+  background-color: var(--bg-color);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -145,8 +137,102 @@
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .hero-flex-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile_img img {
+    width: 130px;
+  }
+
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
   .container {
     flex-direction: column;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .column {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .profile_img img {
+    width: 160px;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .profile_img img {
+    width: 200px;
+  }
+
+  .container {
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .column {
+    flex: 1 1 45%;
+  }
+
+  .project img {
+    width: 100%;
+    max-width: 400px;
   }
 }
