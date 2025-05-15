@@ -17,7 +17,7 @@ function toggleMenu() {
     }
   });
 
-function toggleMenu() {
+function toggleHamburgerMenu() {
   const menu = document.getElementById("menu");
   if (menu) {
     menu.classList.toggle("active");
