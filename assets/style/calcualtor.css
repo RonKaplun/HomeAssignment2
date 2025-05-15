@@ -25,7 +25,6 @@ main {
   align-items: center;       
   justify-content: flex-start;
   padding-top: 120px;     
-  margin-bottom: 100%;  
   min-height: calc(100vh - 100px - 100px); 
   box-sizing: border-box;
   text-align: center;
@@ -33,7 +32,7 @@ main {
  
 .Hero-Section {
   background-color:var(--bg-color);
-  padding: 120px 20px 50px 20px;
+  padding: 120px 20px 120px 20px;
 }
 .hero-flex-container {
   display: flex;
