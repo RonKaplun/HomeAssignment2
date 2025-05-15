@@ -29,6 +29,8 @@ main {
   min-height: calc(100vh - 100px - 100px); 
   box-sizing: border-box;
   text-align: center;
+   height: 100%;
+  margin: 0;
 }
  
 .Hero-Section {
