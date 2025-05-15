@@ -17,11 +17,8 @@ function toggleMenu() {
     }
   });
 
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('nav ul');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-});
-
+function toggleMenu() {
+  const menu = document.querySelector('nav ul');
+  menu.classList.toggle('active');
+}
   
