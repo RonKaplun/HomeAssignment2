@@ -18,7 +18,9 @@ function toggleMenu() {
   });
 
 function toggleMenu() {
-  const menu = document.querySelector('nav ul');
-  menu.classList.toggle('active');
+  const menu = document.getElementById("menu");
+  if (menu) {
+    menu.classList.toggle("active");
+  }
 }
   
