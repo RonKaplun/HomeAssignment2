@@ -18,6 +18,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 header {
   width: 100%;
@@ -47,16 +50,15 @@ footer {
   margin-top: auto;
   min-height: 100px;
   max-height: 100px;
-  position: fixed;
+  
 }
 
 main {
-  display: flex;
+  display: flex 1;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding-top: 120px;
-  min-height: calc(100vh - 100px - 100px);
   box-sizing: border-box;
   text-align: center;
 }
