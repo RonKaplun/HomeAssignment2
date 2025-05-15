@@ -1,61 +1,78 @@
+:root {
+  --bg-color: whitesmoke;
+  --text-color: black;
+  --footer-bg: lightgrey;
+}
 
- header {
-    width: 100%;
-    background-color:var(--footer-bg) ;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    position:fixed;
-    top: 0;
-    z-index: 1000;
-    min-height: 100px;
-    max-height: 100px;
-    
- }
- main{
-    flex: 1;
- }
-.button{
-margin: 20px;
- }
- nav {
-    width: 100%;
-    display:flex;
-    position: sticky;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 20%;
-    
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20%;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-    
-  }
-  
-  nav a.active {
-    border-bottom: 3px solid white;
-  }
-  
-  .hamburger {
-    display:flex;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-  }
+body.dark-mode {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --footer-bg: darkgrey;
+}
 
+body {
+  direction: ltr;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  width: 100%;
+  background-color: var(--footer-bg);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+main {
+  flex: 1;
+}
+
+.button {
+  margin: 20px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 3px solid white;
+}
+
+.hamburger {
+  display: none;  
+  font-size: 28px;
+  color: var(--text-color);
+  cursor: pointer;
+}
 
 footer {
   width: 100%;
@@ -72,92 +89,106 @@ footer {
   min-height: 100px;
   max-height: 100px;
 }
-  @media (max-width: 767px) {
-  header {
-    height: 80px;
-  }
 
-  nav {
-    padding: 0 10%;
-    justify-content: flex-start;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px;
+  min-height: calc(100vh - 100px - 100px);
+  box-sizing: border-box;
+  text-align: center;
+}
 
+.Hero-Section {
+  background-color: var(--bg-color);
+  padding: 120px 20px 50px 20px;
+}
+
+.hero-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
   nav ul {
+    display: none; 
     flex-direction: column;
-    gap: 15px;
-    padding-left: 10px;
-  }
-
-  nav a {
-    font-size: 14px;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--footer-bg); 
   }
 
   .hamburger {
-    display: block;
+    display: block; 
   }
 
-  footer {
-    height: 80px;
+  nav ul.active {
+    display: flex; 
+  }
+
+  .hero-flex-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  header {
-    height: 90px;
+  .hero-text h1 {
+    font-size: 24px;
   }
 
-  nav {
-    padding: 0 15%;
-    justify-content: space-between;
-  }
-
-  nav ul {
-    gap: 15%;
-  }
-
-  nav a {
-    font-size: 16px;
-  }
-
-  footer {
-    height: 90px;
+  .hero-text p {
+    font-size: 15px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  header {
-    height: 100px;
+  .hero-text h1 {
+    font-size: 28px;
   }
 
-  nav {
-    padding: 0 20%;
-    justify-content: space-around;
-  }
-
-  nav a {
-    font-size: 18px;
-  }
-
-  footer {
-    height: 100px;
+  .hero-text p {
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1200px) {
-  header {
-    height: 100px;
+  .hero-text h1 {
+    font-size: 32px;
   }
 
-  nav {
-    padding: 0 20%;
-    justify-content: space-around;
-  }
-
-  nav a {
-    font-size: 20px;
-  }
-
-  footer {
-    height: 100px;
+  .hero-text p {
+    font-size: 18px;
   }
 }
