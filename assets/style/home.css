@@ -167,6 +167,9 @@ body {
 
   .column {
     padding: 15px;
+     min-width: 0; 
+    width: 100%;   
+    box-sizing: border-box;
   }
 }
 
@@ -235,4 +238,8 @@ body {
     width: 100%;
     max-width: 400px;
   }
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
